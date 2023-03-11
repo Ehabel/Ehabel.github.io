@@ -27,6 +27,10 @@
         display: none;
     }
 
+    &_all {
+        @include flex-opts(flex-end, flex-end, column);
+    }
+
     @media only screen and (min-width: 46em) {
         &__nav-bar__menu {
             list-style: none;
@@ -36,6 +40,15 @@
         .header__content_hamburger {
             display: none;
         }
+    }
+
+    &__nav-bar__menu {
+        list-style: none;
+    }
+
+    &__nav-bar__menu.--show {
+        @include flex-opts(flex-end, center, column);
+        text-align: right;
     }
 
     &__nav-bar__menu > li > a {
@@ -51,5 +64,6 @@
 }
 
 .fa-bars {
-    margin-right: 35px;
+    margin-right: 40px;
+    color: #f8f9fa;
 }

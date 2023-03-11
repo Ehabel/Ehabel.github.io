@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Ehab El Cheikh | Software Engineer</title>
         <link rel="stylesheet" href="./css/styles.css" />
+        <script src="./js/scripts.js"></script>
         <script
             src="https://kit.fontawesome.com/bdfa63da9e.js"
             crossorigin="anonymous"
@@ -21,6 +22,12 @@
         <header>
             <div class="header__content">
                 <p class="header__content__intro">Ehab El Cheikh</p>
+                <div class="header__content_all">
+                <div class="header__content_hamburger">
+                    <a onclick="myFunction()">
+                        <i class="fa-solid fa-bars fa-xl"></i>
+                      </a>
+                </div>
                 <nav class="header__content__nav-bar">
                     <ul class="header__content__nav-bar__menu">
                         <li><a href="#home">Home</a></li>
@@ -30,9 +37,7 @@
                         <li><a href="#contact">Contact Me</a></li>
                     </ul>
                 </nav>
-                <div class="header__content_hamburger">
-                    <i class="fa-solid fa-bars fa-xl"></i>
-                </div>
+            </div>
             </div>
         </header>
         <section class="home section-container home-background" id="home">
@@ -45,12 +50,22 @@
         </section>
         <section class="about section-container" id="about">
             <h1 class="about__content__header">ABOUT ME</h1>
+            <p class="about__content__para">My name is Ehab  and i have always been passionate about technology always tinkering with computers and other pieces of tech. <i class="fa-solid fa-computer fa-lg"></i></p>
+        </p>
             <p class="about__content__para">
-                I am a Junior Full-Stack Software Engineer
+                I am a Junior Full-Stack Software Engineer currently still
+                studying in University working towards completing my Bachelors
+                degree (Honours) in Software Engineering at the University of
+                Sydney. <i class="fa-solid fa-graduation-cap fa-lg"></i></p>
+            <p class="about__content__para">Check out what I have worked on in the projects section <i class="fa-solid fa-arrow-right fa-lg"></i>
+                <a class="about__nav" href="#projects"><i class="fa-solid fa-code fa-lg"></i></a></p>
             </p>
+            <p class="about__content__para">Check out what I have worked on in the projects section.
+                Feel free to connect to me on my Linkedin <i class="fa-solid fa-arrow-right fa-lg"></i> <a class="about__nav" href="#contact"><i class="fa-solid fa-share-from-square fa-lg"></i></a></p>
+        </p>
         </section>
         <section class="skills section-container" id="skills">
-            <p class="skills__container__para">Skills:</p>
+            <p class="skills__container__para">I have learnt to code in</p>
             <div class="skills__container">
                 <div class="skills__container__image">
                     <i class="fa-brands fa-github fa-2xl fa-inverse"></i>
@@ -74,7 +89,7 @@
                 </div>
                 <div class="skills__container__image">
                     <i class="fa-brands fa-react fa-2xl fa-inverse"></i>
-                    <p class="skills__container__desc">ReactJs</p>
+                    <p class="skills__container__desc">ReactJS</p>
                 </div>
                 <div class="skills__container__image">
                     <i class="fa-brands fa-java fa-2xl fa-inverse"></i>

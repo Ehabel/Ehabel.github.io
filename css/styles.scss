@@ -29,7 +29,18 @@
 .about {
     padding-top: 65px;
     @include heading.flex-opts(center, center, column);
-    font-size: 3vh;
+    font-size: 3.5vh;
+
+    &__content__para {
+        margin-bottom: 20px;
+        font-size: 2.5vh;
+        text-align: center;
+        max-width: 60%;
+    }
+
+    a:visited {
+        color: black;
+    }
 }
 
 .skills {
