@@ -1,88 +1,135 @@
 * {
-  font-family: "Montserrat", sans-serif;
-  padding: 0px;
-  margin: 0px;
+    font-family: "Montserrat", sans-serif;
+    padding: 0px;
+    margin: 0px;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
 body {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 .header__content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  color: black;
-  background-color: white;
-  position: fixed;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  padding: 15px;
-}
-
-.header__content__nav-bar__menu {
-  display: none;
-}
-
-@media only screen and (min-width: 40em) {
-  .header__content__nav-bar__menu {
-    list-style: none;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
     flex-wrap: nowrap;
-  }
+    color: black;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding: 15px;
+}
+
+.header__content__nav-bar__menu {
+    display: none;
+}
+
+@media only screen and (min-width: 40em) {
+    .header__content__nav-bar__menu {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
 }
 .header__content__nav-bar__menu > li > a {
-  margin: 40px;
+    margin: 40px;
 }
 
 .home {
-  padding-top: 65px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  font-size: 2.5vh;
+    padding-top: 65px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    font-size: 2.5vh;
 }
 .home__content__header {
-  padding-right: 25px;
+    padding-right: 25px;
 }
 .home__content__para {
-  padding-right: 25px;
+    padding-right: 25px;
 }
 
 .home-background {
-  background-color: #f3f3f3;
-  background-image: linear-gradient(30deg, #ffffff 12%, transparent 12.5%, transparent 87%, #ffffff 87.5%, #ffffff), linear-gradient(150deg, #ffffff 12%, transparent 12.5%, transparent 87%, #ffffff 87.5%, #ffffff), linear-gradient(30deg, #ffffff 12%, transparent 12.5%, transparent 87%, #ffffff 87.5%, #ffffff), linear-gradient(150deg, #ffffff 12%, transparent 12.5%, transparent 87%, #ffffff 87.5%, #ffffff), linear-gradient(60deg, rgba(255, 255, 255, 0.4666666667) 25%, transparent 25.5%, transparent 75%, rgba(255, 255, 255, 0.4666666667) 75%, rgba(255, 255, 255, 0.4666666667)), linear-gradient(60deg, rgba(255, 255, 255, 0.4666666667) 25%, transparent 25.5%, transparent 75%, rgba(255, 255, 255, 0.4666666667) 75%, rgba(255, 255, 255, 0.4666666667));
-  background-size: 80px 140px;
-  background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+    background-color: #f3f3f3;
+    background-image: linear-gradient(
+            30deg,
+            #ffffff 12%,
+            transparent 12.5%,
+            transparent 87%,
+            #ffffff 87.5%,
+            #ffffff
+        ),
+        linear-gradient(
+            150deg,
+            #ffffff 12%,
+            transparent 12.5%,
+            transparent 87%,
+            #ffffff 87.5%,
+            #ffffff
+        ),
+        linear-gradient(
+            30deg,
+            #ffffff 12%,
+            transparent 12.5%,
+            transparent 87%,
+            #ffffff 87.5%,
+            #ffffff
+        ),
+        linear-gradient(
+            150deg,
+            #ffffff 12%,
+            transparent 12.5%,
+            transparent 87%,
+            #ffffff 87.5%,
+            #ffffff
+        ),
+        linear-gradient(
+            60deg,
+            rgba(255, 255, 255, 0.4666666667) 25%,
+            transparent 25.5%,
+            transparent 75%,
+            rgba(255, 255, 255, 0.4666666667) 75%,
+            rgba(255, 255, 255, 0.4666666667)
+        ),
+        linear-gradient(
+            60deg,
+            rgba(255, 255, 255, 0.4666666667) 25%,
+            transparent 25.5%,
+            transparent 75%,
+            rgba(255, 255, 255, 0.4666666667) 75%,
+            rgba(255, 255, 255, 0.4666666667)
+        );
+    background-size: 80px 140px;
+    background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
 }
 
 .about {
-  padding-top: 65px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  font-size: 3rem;
+    padding-top: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    font-size: 3rem;
 }
 
 .section-container {
-  min-height: 100vh;
+    min-height: 100vh;
 }
