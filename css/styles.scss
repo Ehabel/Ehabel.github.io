@@ -1,5 +1,6 @@
 @use "./global";
 @use "./heading";
+@use "./backgroundStyle.scss";
 
 .menu {
     display: none;
@@ -26,12 +27,15 @@ ul > li > a {
         &__header {
             padding-right: 25px;
             color: black;
-            opacity: 1;
         }
         &__para {
             padding-right: 25px;
         }
     }
+}
+
+.home-background {
+    @include backgroundStyle.background-design-cubes;
 }
 
 .about {
@@ -42,8 +46,4 @@ ul > li > a {
 
 .section-container {
     min-height: 100vh;
-}
-
-object {
-    background-size: 20px 30px;
 }

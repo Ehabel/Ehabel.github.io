@@ -64,10 +64,16 @@ ul > li > a {
 .home__content__header {
   padding-right: 25px;
   color: black;
-  opacity: 1;
 }
 .home__content__para {
   padding-right: 25px;
+}
+
+.home-background {
+  background-color: #f3f3f3;
+  background-image: linear-gradient(30deg, #ffffff 12%, transparent 12.5%, transparent 87%, #ffffff 87.5%, #ffffff), linear-gradient(150deg, #ffffff 12%, transparent 12.5%, transparent 87%, #ffffff 87.5%, #ffffff), linear-gradient(30deg, #ffffff 12%, transparent 12.5%, transparent 87%, #ffffff 87.5%, #ffffff), linear-gradient(150deg, #ffffff 12%, transparent 12.5%, transparent 87%, #ffffff 87.5%, #ffffff), linear-gradient(60deg, rgba(255, 255, 255, 0.4666666667) 25%, transparent 25.5%, transparent 75%, rgba(255, 255, 255, 0.4666666667) 75%, rgba(255, 255, 255, 0.4666666667)), linear-gradient(60deg, rgba(255, 255, 255, 0.4666666667) 25%, transparent 25.5%, transparent 75%, rgba(255, 255, 255, 0.4666666667) 75%, rgba(255, 255, 255, 0.4666666667));
+  background-size: 80px 140px;
+  background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
 }
 
 .about {
@@ -82,8 +88,4 @@ ul > li > a {
 
 .section-container {
   min-height: 100vh;
-}
-
-object {
-  background-size: 20px 30px;
 }
