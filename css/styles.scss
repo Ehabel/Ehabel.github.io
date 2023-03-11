@@ -16,6 +16,12 @@
 .header__content__nav-bar__menu > li > a {
     white-space: nowrap;
     margin: 40px;
+    text-decoration: none;
+    color: black;
+}
+
+.header__content__nav-bar__menu > li > a:visited {
+    color: black;
 }
 
 .section-container {
@@ -71,4 +77,8 @@
             padding-left: 10px;
         }
     }
+}
+
+.contact {
+    @include backgroundStyle.background-design-cubes;
 }
