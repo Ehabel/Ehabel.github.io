@@ -46,18 +46,29 @@
 .about {
     padding-top: 65px;
     @include heading.flex-opts(center, center, column);
-    font-size: 3rem;
+    font-size: 3vh;
 }
 
 .skills {
     @include heading.flex-opts(center, center, column, wrap);
     background-color: #202020;
     &__container {
-        @include heading.flex-opts(center, space-between, row, wrap);
+        @include heading.flex-opts(center, space-evenly, row, wrap);
         padding: 30px;
         &__para {
             color: white;
             font-size: 5vh;
+        }
+
+        &__image {
+            @include heading.flex-opts(center, center);
+            padding: 20px;
+        }
+
+        &__desc {
+            color: white;
+            font-size: 3vh;
+            padding-left: 10px;
         }
     }
 }
