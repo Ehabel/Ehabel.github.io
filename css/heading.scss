@@ -1,0 +1,23 @@
+@mixin flex-opts($align, $justify, $direction: row, $wrap: nowrap) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+}
+
+@mixin coloring($color, $background-color) {
+    color: $color;
+    background-color: $background-color;
+}
+
+.header__content {
+    @include flex-opts(center, space-between, row, nowrap);
+    @include coloring(black, white);
+    position: fixed;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    padding: 10px;
+}

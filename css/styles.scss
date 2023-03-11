@@ -1,0 +1,49 @@
+@use "./global";
+@use "./heading";
+
+.menu {
+    display: none;
+}
+
+@media only screen and (min-width: 40em) {
+    .menu {
+        list-style: none;
+        @include heading.flex-opts(center, space-between);
+    }
+}
+
+ul > li > a {
+    margin: 5px;
+    padding: 10px;
+}
+
+.home {
+    padding-top: 65px;
+    @include heading.flex-opts(flex-end, center, column);
+    font-size: 2.5vh;
+
+    &__content {
+        &__header {
+            padding-right: 25px;
+            color: black;
+            opacity: 1;
+        }
+        &__para {
+            padding-right: 25px;
+        }
+    }
+}
+
+.about {
+    padding-top: 65px;
+    @include heading.flex-opts(center, center, column);
+    font-size: 3rem;
+}
+
+.section-container {
+    min-height: 100vh;
+}
+
+object {
+    background-size: 20px 30px;
+}
