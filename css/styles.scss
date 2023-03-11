@@ -2,20 +2,19 @@
 @use "./heading";
 @use "./backgroundStyle.scss";
 
-.menu {
+.header__content__nav-bar__menu {
     display: none;
 }
 
 @media only screen and (min-width: 40em) {
-    .menu {
+    .header__content__nav-bar__menu {
         list-style: none;
         @include heading.flex-opts(center, space-between);
     }
 }
 
-ul > li > a {
-    margin: 5px;
-    padding: 10px;
+.header__content__nav-bar__menu > li > a {
+    margin: 40px;
 }
 
 .home {
@@ -26,7 +25,6 @@ ul > li > a {
     &__content {
         &__header {
             padding-right: 25px;
-            color: black;
         }
         &__para {
             padding-right: 25px;
