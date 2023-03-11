@@ -6,7 +6,7 @@
     display: none;
 }
 
-@media only screen and (min-width: 40em) {
+@media only screen and (min-width: 46em) {
     .header__content__nav-bar__menu {
         list-style: none;
         @include heading.flex-opts(center, space-between);
@@ -14,13 +14,20 @@
 }
 
 .header__content__nav-bar__menu > li > a {
+    white-space: nowrap;
     margin: 40px;
+}
+
+.section-container {
+    min-height: 100vh;
+    border: 1px solid black;
 }
 
 .home {
     padding-top: 65px;
     @include heading.flex-opts(flex-end, center, column);
     font-size: 2.5vh;
+    min-height: 100vh;
 
     &__content {
         &__header {
@@ -42,6 +49,15 @@
     font-size: 3rem;
 }
 
-.section-container {
-    min-height: 100vh;
+.skills {
+    @include heading.flex-opts(center, center, column, wrap);
+    background-color: #202020;
+    &__container {
+        @include heading.flex-opts(center, space-between, row, wrap);
+        padding: 30px;
+        &__para {
+            color: white;
+            font-size: 5vh;
+        }
+    }
 }
