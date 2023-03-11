@@ -23,19 +23,19 @@ body {
   justify-content: space-between;
   flex-direction: row;
   flex-wrap: nowrap;
-  color: black;
-  background-color: white;
-  position: fixed;
   width: 100%;
   position: fixed;
   top: 0;
   padding: 15px;
+  color: #f8f9fa;
+  background-color: #212529;
 }
-
+.header__content__intro {
+  font-size: 3vh;
+}
 .header__content__nav-bar__menu {
   display: none;
 }
-
 @media only screen and (min-width: 46em) {
   .header__content__nav-bar__menu {
     list-style: none;
@@ -45,21 +45,26 @@ body {
     flex-direction: row;
     flex-wrap: nowrap;
   }
+  .header__content .header__content_hamburger {
+    display: none;
+  }
 }
 .header__content__nav-bar__menu > li > a {
   white-space: nowrap;
   margin: 40px;
   text-decoration: none;
-  color: black;
+  color: #f8f9fa;
+}
+.header__content__nav-bar__menu > li > a:visited {
+  color: #f8f9fa;
 }
 
-.header__content__nav-bar__menu > li > a:visited {
-  color: black;
+.fa-bars {
+  margin-right: 35px;
 }
 
 .section-container {
   min-height: 100vh;
-  border: 1px solid black;
 }
 
 .home {
@@ -102,7 +107,7 @@ body {
   justify-content: center;
   flex-direction: column;
   flex-wrap: wrap;
-  background-color: #202020;
+  background-color: #343a40;
 }
 .skills__container {
   display: flex;

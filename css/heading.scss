@@ -13,10 +13,43 @@
 
 .header__content {
     @include flex-opts(center, space-between, row, nowrap);
-    @include coloring(black, white);
-    position: fixed;
     width: 100%;
     position: fixed;
     top: 0;
     padding: 15px;
+    @include coloring(#f8f9fa, #212529);
+
+    &__intro {
+        font-size: 3vh;
+    }
+
+    &__nav-bar__menu {
+        display: none;
+    }
+
+    @media only screen and (min-width: 46em) {
+        &__nav-bar__menu {
+            list-style: none;
+            @include flex-opts(center, space-between);
+        }
+
+        .header__content_hamburger {
+            display: none;
+        }
+    }
+
+    &__nav-bar__menu > li > a {
+        white-space: nowrap;
+        margin: 40px;
+        text-decoration: none;
+        color: #f8f9fa;
+    }
+
+    &__nav-bar__menu > li > a:visited {
+        color: #f8f9fa;
+    }
+}
+
+.fa-bars {
+    margin-right: 35px;
 }

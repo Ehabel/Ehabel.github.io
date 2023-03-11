@@ -2,31 +2,8 @@
 @use "./heading";
 @use "./backgroundStyle.scss";
 
-.header__content__nav-bar__menu {
-    display: none;
-}
-
-@media only screen and (min-width: 46em) {
-    .header__content__nav-bar__menu {
-        list-style: none;
-        @include heading.flex-opts(center, space-between);
-    }
-}
-
-.header__content__nav-bar__menu > li > a {
-    white-space: nowrap;
-    margin: 40px;
-    text-decoration: none;
-    color: black;
-}
-
-.header__content__nav-bar__menu > li > a:visited {
-    color: black;
-}
-
 .section-container {
     min-height: 100vh;
-    border: 1px solid black;
 }
 
 .home {
@@ -57,7 +34,7 @@
 
 .skills {
     @include heading.flex-opts(center, center, column, wrap);
-    background-color: #202020;
+    background-color: #343a40;
     &__container {
         @include heading.flex-opts(center, space-evenly, row, wrap);
         padding: 30px;
