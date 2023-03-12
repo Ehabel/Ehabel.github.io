@@ -94,5 +94,19 @@
 }
 
 .contact {
+    min-height: 30vh;
     @include backgroundStyle.background-design-cubes;
+    @include heading.flex-opts(center, space-evenly, column);
+
+    &__container {
+        @include heading.flex-opts(center, space-evenly);
+        width: 100%;
+        & a {
+            color: black;
+        }
+
+        & a:visited {
+            color: black;
+        }
+    }
 }

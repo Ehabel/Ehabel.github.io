@@ -197,8 +197,28 @@ body {
 }
 
 .contact {
+  min-height: 30vh;
   background-color: #f3f3f3;
   background-image: linear-gradient(30deg, #ffffff 12%, transparent 12.5%, transparent 87%, #ffffff 87.5%, #ffffff), linear-gradient(150deg, #ffffff 12%, transparent 12.5%, transparent 87%, #ffffff 87.5%, #ffffff), linear-gradient(30deg, #ffffff 12%, transparent 12.5%, transparent 87%, #ffffff 87.5%, #ffffff), linear-gradient(150deg, #ffffff 12%, transparent 12.5%, transparent 87%, #ffffff 87.5%, #ffffff), linear-gradient(60deg, rgba(255, 255, 255, 0.4666666667) 25%, transparent 25.5%, transparent 75%, rgba(255, 255, 255, 0.4666666667) 75%, rgba(255, 255, 255, 0.4666666667)), linear-gradient(60deg, rgba(255, 255, 255, 0.4666666667) 25%, transparent 25.5%, transparent 75%, rgba(255, 255, 255, 0.4666666667) 75%, rgba(255, 255, 255, 0.4666666667));
   background-size: 80px 140px;
   background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.contact__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+.contact__container a {
+  color: black;
+}
+.contact__container a:visited {
+  color: black;
 }
