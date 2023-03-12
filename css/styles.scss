@@ -74,6 +74,10 @@
 .projects {
     @include heading.flex-opts(center, center, column);
 
+    &__header {
+        font-size: 5vh;
+    }
+
     &__card {
         @include heading.flex-opts(center, space-evenly, row, wrap);
 
