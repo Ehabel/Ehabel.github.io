@@ -1,3 +1,5 @@
+@use "./theme";
+
 @mixin flex-opts($align, $justify, $direction: row, $wrap: nowrap) {
     display: flex;
     align-items: $align;
@@ -23,52 +25,44 @@
         font-size: 2.5vh;
     }
 
-    &__nav-bar__menu {
+    &__navbar__menu {
         display: none;
+        list-style: theme.$val-none;
+
+        &__link--black {
+            white-space: nowrap;
+            margin: 40px;
+            text-decoration: theme.$val-none;
+            color: #f8f9fa;
+        }
+
+        &__link--black:visited {
+            color: #f8f9fa;
+        }
     }
 
-    &_all {
+    &__container {
         @include flex-opts(flex-end, flex-end, column);
     }
 
     @media only screen and (min-width: 768px) {
-        &__nav-bar__menu {
-            list-style: none;
+        &__navbar__menu {
+            list-style: theme.$val-none;
             @include flex-opts(center, space-between);
         }
 
-        .header__content_hamburger {
-            display: none;
+        &__hamburger {
+            display: theme.$val-none;
         }
     }
 
-    &__nav-bar__menu {
-        list-style: none;
-    }
-
-    &__nav-bar__menu.--show {
+    &__navbar__menu.--show {
         @include flex-opts(flex-end, center, column);
         text-align: right;
-    }
-
-    &__nav-bar__menu > li > a {
-        white-space: nowrap;
-        margin: 40px;
-        text-decoration: none;
-        color: #f8f9fa;
-    }
-
-    &__nav-bar__menu > li > a:visited {
-        color: #f8f9fa;
     }
 }
 
 .fa-bars {
     margin-right: 40px;
     color: #f8f9fa;
-}
-
-.devicon-firebase-plain {
-    font-size: 24px;
-    color: white;
 }

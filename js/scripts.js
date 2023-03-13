@@ -1,5 +1,5 @@
 function myFunction() {
-    var x = document.querySelector(".header__content__nav-bar__menu");
+    var x = document.querySelector(".header__content__navbar__menu");
     var allLinks = document.getElementsByClassName("header__link");
     x.classList.toggle("--show");
 

@@ -1,35 +1,31 @@
 @use "./global";
 @use "./heading";
 @use "./backgroundStyle.scss";
+@use "./theme";
 
 .section-container {
-    min-height: 100vh;
+    min-height: theme.$page-height;
 }
 
 .home {
-    padding-top: 65px;
     @include heading.flex-opts(flex-end, center, column);
     font-size: 2.5vh;
-    min-height: 100vh;
+    min-height: theme.$page-height;
 
     &__content {
-        &__header {
-            padding-right: 25px;
+        &--padded {
+            padding-right: theme.$padding-r;
         }
-        &__para {
-            padding-right: 25px;
-        }
+    }
+
+    &--background {
+        @include backgroundStyle.background-design-cubes;
     }
 }
 
-.home-background {
-    @include backgroundStyle.background-design-cubes;
-}
-
 .about {
-    padding-top: 65px;
     @include heading.flex-opts(center, center, column);
-    font-size: 3.5vh;
+    font-size: theme.$font-default;
 
     &__content__para {
         margin-bottom: 20px;
@@ -38,12 +34,12 @@
         max-width: 60%;
     }
 
-    a {
-        color: black;
+    &__nav {
+        color: theme.$col-black;
     }
 
-    a:visited {
-        color: black;
+    &__nav:visited {
+        color: theme.$col-black;
     }
 }
 
@@ -52,24 +48,20 @@
     background-color: #343a40;
     &__container {
         @include heading.flex-opts(center, space-evenly, row, wrap);
-        padding: 30px;
+        padding: theme.$pixel-thirty;
         &__para {
-            color: white;
-            font-size: 5vh;
+            color: theme.$col-white;
+            font-size: theme.$font-large;
         }
 
         &__image {
             @include heading.flex-opts(center, center);
             padding: 20px;
-
-            // &--wrap-text {
-            //     @include heading.flex-opts(center, center, column);
-            // }
         }
 
         &__desc {
-            color: white;
-            font-size: 1.5em;
+            color: theme.$col-white;
+            font-size: theme.$font-default;
             padding-left: 10px;
         }
     }
@@ -79,7 +71,7 @@
     @include heading.flex-opts(center, center, column);
 
     &__header {
-        font-size: 5vh;
+        font-size: theme.$font-large;
     }
 
     &__card {
@@ -87,10 +79,10 @@
 
         &__child {
             @include heading.flex-opts(center, center, column);
-            padding: 30px;
+            padding: theme.$pixel-thirty;
 
             & img {
-                border-radius: 30px;
+                border-radius: theme.$pixel-thirty;
             }
 
             &__para {
@@ -118,12 +110,13 @@
     &__container {
         @include heading.flex-opts(center, space-evenly);
         width: 100%;
-        & a {
-            color: black;
+
+        &__link--black {
+            color: theme.$col-black;
         }
 
-        & a:visited {
-            color: black;
+        &__link--black:visited {
+            color: theme.$col-black;
         }
     }
 }
