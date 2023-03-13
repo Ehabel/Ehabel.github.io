@@ -61,11 +61,15 @@
         &__image {
             @include heading.flex-opts(center, center);
             padding: 20px;
+
+            // &--wrap-text {
+            //     @include heading.flex-opts(center, center, column);
+            // }
         }
 
         &__desc {
             color: white;
-            font-size: 3vh;
+            font-size: 1.5em;
             padding-left: 10px;
         }
     }
@@ -82,7 +86,7 @@
         @include heading.flex-opts(center, space-evenly, row, wrap);
 
         &__child {
-            @include heading.flex-opts(center, center);
+            @include heading.flex-opts(center, center, column);
             padding: 30px;
 
             & img {
@@ -90,8 +94,17 @@
             }
 
             &__para {
-                padding-left: 20px;
                 max-width: 350px;
+            }
+        }
+
+        @media only screen and (min-width: 768px) {
+            &__child {
+                @include heading.flex-opts(center, center, row);
+                padding: 30px;
+                &__para {
+                    padding-left: 20px;
+                }
             }
         }
     }

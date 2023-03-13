@@ -43,7 +43,7 @@ body {
   flex-direction: column;
   flex-wrap: nowrap;
 }
-@media only screen and (min-width: 46em) {
+@media only screen and (min-width: 768px) {
   .header__content__nav-bar__menu {
     list-style: none;
     display: flex;
@@ -80,6 +80,11 @@ body {
 .fa-bars {
   margin-right: 40px;
   color: #f8f9fa;
+}
+
+.devicon-firebase-plain {
+  font-size: 24px;
+  color: white;
 }
 
 .section-container {
@@ -162,7 +167,7 @@ body {
 }
 .skills__container__desc {
   color: white;
-  font-size: 3vh;
+  font-size: 1.5em;
   padding-left: 10px;
 }
 
@@ -187,7 +192,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: nowrap;
   padding: 30px;
 }
@@ -195,8 +200,20 @@ body {
   border-radius: 30px;
 }
 .projects__card__child__para {
-  padding-left: 20px;
   max-width: 350px;
+}
+@media only screen and (min-width: 768px) {
+  .projects__card__child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 30px;
+  }
+  .projects__card__child__para {
+    padding-left: 20px;
+  }
 }
 
 .contact {
