@@ -1,122 +1,30 @@
 @use "./global";
 @use "./heading";
 @use "./backgroundStyle.scss";
+@use "./body-mixins";
 @use "./theme";
 
 .section-container {
-    min-height: theme.$page-height;
+    min-height: 95vh;
+    padding: 50px 0px;
 }
 
 .home {
-    @include heading.flex-opts(flex-end, center, column);
-    font-size: 2.5vh;
-    min-height: theme.$page-height;
-
-    &__content {
-        &--padded {
-            padding-right: theme.$padding-r;
-        }
-    }
-
-    &--background {
-        @include backgroundStyle.background-design-cubes;
-    }
+    @include body-mixins.home-section;
 }
 
 .about {
-    @include heading.flex-opts(center, center, column);
-    font-size: theme.$font-default;
-
-    &__content__para {
-        margin-bottom: 20px;
-        font-size: 2.5vh;
-        text-align: center;
-        max-width: 60%;
-    }
-
-    &__nav {
-        color: theme.$col-black;
-    }
-
-    &__nav:visited {
-        color: theme.$col-black;
-    }
+    @include body-mixins.about-section;
 }
 
 .skills {
-    @include heading.flex-opts(center, center, column, wrap);
-    background-color: #343a40;
-    &__container {
-        @include heading.flex-opts(center, space-evenly, row, wrap);
-        padding: theme.$pixel-thirty;
-        &__para {
-            color: theme.$col-white;
-            font-size: theme.$font-large;
-        }
-
-        &__image {
-            @include heading.flex-opts(center, center);
-            padding: 20px;
-        }
-
-        &__desc {
-            color: theme.$col-white;
-            font-size: theme.$font-default;
-            padding-left: 10px;
-        }
-    }
+    @include body-mixins.skills-section;
 }
 
 .projects {
-    @include heading.flex-opts(center, center, column);
-
-    &__header {
-        font-size: theme.$font-large;
-    }
-
-    &__card {
-        @include heading.flex-opts(center, space-evenly, row, wrap);
-
-        &__child {
-            @include heading.flex-opts(center, center, column);
-            padding: theme.$pixel-thirty;
-
-            & img {
-                border-radius: theme.$pixel-thirty;
-            }
-
-            &__para {
-                max-width: 350px;
-            }
-        }
-
-        @media only screen and (min-width: 768px) {
-            &__child {
-                @include heading.flex-opts(center, center, row);
-                padding: 30px;
-                &__para {
-                    padding-left: 20px;
-                }
-            }
-        }
-    }
+    @include body-mixins.projects-section;
 }
 
 .contact {
-    min-height: 30vh;
-    @include backgroundStyle.background-design-cubes;
-    @include heading.flex-opts(center, space-evenly, column);
-
-    &__container {
-        @include heading.flex-opts(center, space-evenly);
-        width: 100%;
-
-        &__link--black {
-            color: theme.$col-black;
-        }
-
-        &__link--black:visited {
-            color: theme.$col-black;
-        }
-    }
+    @include body-mixins.contact-section;
 }
