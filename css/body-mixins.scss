@@ -4,7 +4,7 @@
 @use "./theme";
 
 @mixin home-section {
-    @include heading.flex-opts(flex-end, center, column);
+    @include heading.flex-opts(center, center, row);
     font-size: 2.5vh;
 
     &__content {
