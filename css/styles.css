@@ -118,6 +118,17 @@ body {
   text-align: center;
   max-width: 65%;
 }
+.about__content__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.about__content__container i {
+  padding: 15px 0px;
+  height: 40px;
+}
 .about__nav, .about__nav:visited {
   color: black;
 }
@@ -222,9 +233,6 @@ body {
   flex-wrap: nowrap;
   width: 100%;
 }
-.contact__container__link--black {
-  color: black;
-}
-.contact__container__link--black:visited {
+.contact__container__link--black, .contact__container__link--black:visited {
   color: black;
 }
