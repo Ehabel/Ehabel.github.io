@@ -8,9 +8,7 @@
     font-size: 2.5vh;
 
     &__content {
-        &--padded {
-            padding-right: theme.$padding-r;
-        }
+        text-align: center;
     }
 
     &--background {
@@ -110,13 +108,25 @@
             &__para {
                 max-width: 350px;
             }
+
+            &__links {
+                @include heading.flex-opts(center, center, column);
+                &__container {
+                    padding-top: theme.$pixel-twenty;
+                }
+
+                &--black,
+                &--black:visited {
+                    color: theme.$col-black;
+                }
+            }
         }
 
         @media only screen and (min-width: 768px) {
             &__child {
                 @include heading.flex-opts(center, center, row);
                 padding: 30px;
-                &__para {
+                &__links {
                     padding-left: theme.$pixel-twenty;
                 }
             }

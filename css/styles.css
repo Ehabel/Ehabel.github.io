@@ -93,8 +93,8 @@ body {
   flex-wrap: nowrap;
   font-size: 2.5vh;
 }
-.home__content--padded {
-  padding-right: 25px;
+.home__content {
+  text-align: center;
 }
 .home--background {
   background-color: #f3f3f3;
@@ -198,6 +198,19 @@ body {
 .projects__card__child__para {
   max-width: 350px;
 }
+.projects__card__child__links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.projects__card__child__links__container {
+  padding-top: 20px;
+}
+.projects__card__child__links--black, .projects__card__child__links--black:visited {
+  color: black;
+}
 @media only screen and (min-width: 768px) {
   .projects__card__child {
     display: flex;
@@ -207,7 +220,7 @@ body {
     flex-wrap: nowrap;
     padding: 30px;
   }
-  .projects__card__child__para {
+  .projects__card__child__links {
     padding-left: 20px;
   }
 }
