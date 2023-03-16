@@ -197,6 +197,7 @@ body {
 }
 .projects__card__child__para {
   max-width: 350px;
+  text-align: center;
 }
 .projects__card__child__links {
   display: flex;
