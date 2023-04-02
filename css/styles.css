@@ -150,6 +150,7 @@ body {
   padding: 30px;
 }
 .skills__container__para--white--large {
+  text-align: center;
   color: white;
   font-size: 5vh;
 }
@@ -175,6 +176,7 @@ body {
   flex-wrap: nowrap;
 }
 .projects__header {
+  text-align: center;
   font-size: 5vh;
 }
 .projects__card {

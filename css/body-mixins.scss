@@ -71,6 +71,7 @@
 ) {
     &__para {
         &--white--large {
+            text-align: center;
             color: $para-color;
             font-size: $para-size;
         }
@@ -91,6 +92,7 @@
     @include heading.flex-opts(center, center, column);
 
     &__header {
+        text-align: center;
         font-size: theme.$font-large;
     }
 
