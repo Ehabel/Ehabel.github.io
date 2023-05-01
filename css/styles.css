@@ -196,6 +196,8 @@ body {
 }
 .projects__card__child img {
   border-radius: 30px;
+  width: 250px;
+  height: 300px;
 }
 .projects__card__child__para {
   max-width: 350px;
